@@ -1,6 +1,12 @@
+
 body {
 	width: 100%;
 	height: 100%;
+}
+
+@media (max-width: 576px) {
+
+
 }
 
 
@@ -15,6 +21,25 @@ body {
 	max-width: 80%;
 	margin-left: 10%;
 	}
+
+	.techologies {
+	min-height: 1200px;
+	}
+	.descriptionPromiseWrapper{
+		display: flex;
+   	 	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	} 
+
+	.wrapperPromise {
+		display: flex;
+   		flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+
+	
 }
 
 @media (min-width: 768px) {
@@ -25,6 +50,10 @@ body {
 	.wrapperPromiseItem {
 		display: flex;
 	}
+
+	.techologies {
+	min-height: 700px;
+	}
 }
 
 @media (max-width: 992px) {
@@ -34,22 +63,33 @@ body {
 	max-width: 80%;
 	margin-left: 10%;
 	}
+
 }
 
 @media (min-width: 992px) {
 	.promiseSection {
 	position: absolute;
 	top: 430px;
-	max-width: 60%;
-	left: 20%;
+	max-width: 75%;
+	left: 13%;
 	}
 
 	.wrapperPromise {
 		display: flex;
 	}
+
+	.techologies {
+	min-height: 600px;
+	}
+
+
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	.techologies {
+	min-height: 400px;
+	}
+}
 
 
 
@@ -111,13 +151,123 @@ body {
 
 
 .wrapperPromiseImage img {
-	max-width: 300px;
+	max-width: 330px;
 }
 
-.descriptionPromiseWrapper {
-	background: #fff;
-}
+
 
 .wrapperdDescripProm {
 	padding: 20px;
+	background: #fff;
+}
+
+.techologies {
+	background: #F7F8FA;
+}
+
+.promiseItem {
+	background: #fff;
+	margin-right: 7px;
+	margin-top: 7px;
+	max-width: 310px;
+	padding: 13px;
+}
+
+.promiseItem img {
+	margin-bottom: 15px;
+}
+
+.promiseItem h4 {
+	font-size: 20px;
+}
+
+.promiseItem p {
+	font-size: 15px;
+}
+
+.anotherPromiseItem {
+	background: #101B53;
+	color: #F7F8FA;
+}
+
+.otherPromiseItem {
+	background: #dc3545;
+	max-height: 200px;
+	color: #F7F8FA;
+}
+
+.otherPromiseItem hr {
+	background: #fff;
+}
+
+.techologiesSection {
+	background: #F7F8FA;
+	position: relative;
+}
+
+.wrapperTechnologies h3{
+	margin-left: 10%;
+}
+
+.wrapperTechnologies {
+	margin-bottom: 20px;
+}
+
+.techologiesItem {
+	display: flex;
+	padding: 10px 20px;
+	background: #fff;
+	justify-content: center;
+	cursor: pointer;
+
+}
+
+.techologiesItem p {
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 23px;
+	font-weight: 600;
+}
+
+.techologiesItem img {
+	height: 35px;
+}
+
+
+.wrapperAllItems {
+	position:relative;
+	margin-right: 10px;
+}
+
+.descr {
+	background: #fff;
+	padding: 10px 10px;
+	opacity: 0;
+    visibility: hidden;
+	transition: .55s opacity, .55s visibility;
+}
+
+.descr ul li {
+	font-size: 13px;
+}
+
+.descr ul {
+	padding-left: 10px;
+}
+
+.wrapperAllItems:hover .descr{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.techologiesSection {
+	min-height: 200px;
+	padding-top: 40px;
+}
+
+.wrapperTechnologies {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
