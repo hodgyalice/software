@@ -7,11 +7,14 @@ body {
 @media (max-width: 576px) {
 
 
+
 }
 
 
 @media (min-width: 576px) {
-
+	.ourServiceSection {
+		margin-left: 30px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -72,6 +75,10 @@ body {
 		height: 600px;
 	}
 
+	.ourServiceSection {
+	padding-top: 500px;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -101,6 +108,10 @@ body {
 
 	.imageSliderMain {
 		left: 50%;
+	}
+
+	.ourServiceSection {
+	padding-top: 200px;
 	}
 }
 
@@ -389,15 +400,92 @@ body {
 
 .techologiesAll {
 	background: #F7F8FA;
-	min-height: 440px;
+	min-height: 240px;
 }
+
+.wrapperOurService {
+	padding-bottom: 20px;
+}
+
 
 .imageSliderMain {
 	position: absolute;
 	width: 300px;
 }
 
-.ourService {
+.ourServiceSection {
 	background: #111A51;
 	min-height: 300px;
+	color: #F7F8FA;
+}
+
+.wrapperServiceItem {
+	padding: 10px;
+	background: #111A51;
+	height: 140px;
+	width: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	 transition: 1s;
+}
+
+.wrapperServiceItem i {
+	font-size: 35px;
+	color: #092ACF;
+	margin-bottom: 10px;
+}
+
+.wrapperOurService h2 {
+	max-width: 450px;
+	font-size: 30px;
+}
+
+.wrapperOurService p:first-child {
+	color: #D2D2D2;
+	font-size: 16px;
+}
+
+.wrapperService {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+	margin-top: 30px;
+}
+
+.wrapperServiceItem:hover {
+	background: #092AD1;
+	border-radius: 5px;
+}
+
+.wrapperServiceItem:hover i {
+	color: #111A51;
+}
+
+.reviewsSection {
+	background-image: url('../image/bg2.jpg');
+	min-height: 900px;
+	position: relative;
+	bottom: 300px;
+	z-index: -1;
+	padding-top: 300px;
+}
+
+.reviewsBlockSentance {
+	width: 160px;
+	height: 220px;
+	background: #092ACD;
+	position: absolute;
+	top: 70%;
+	left: 13%;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.reviewsBlockSentance p {
+	color: #fff;
+	font-weight: 500;
+	font-size: 35px;
+	margin-top: 50px;
 }
