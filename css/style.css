@@ -64,6 +64,14 @@ body {
 	margin-left: 10%;
 	}
 
+	#slider-wrapper {
+	height: 600px;
+	}
+
+	.slide {
+		height: 600px;
+	}
+
 }
 
 @media (min-width: 992px) {
@@ -81,8 +89,19 @@ body {
 	.techologies {
 	min-height: 600px;
 	}
+	
+	#slider-wrapper {
+	height: 300px;
+	}
 
+	.slide {
+		height: 300px;
+		display: flex;
+	}
 
+	.imageSliderMain {
+		left: 50%;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -223,7 +242,7 @@ body {
 }
 
 .techologiesItem p {
-	margin-left: 15px;
+	margin-left: 10px;
 	margin-top: 10px;
 	font-size: 23px;
 	font-weight: 600;
@@ -270,4 +289,115 @@ body {
 	display: grid;
 	align-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#slider {
+	margin: 2em auto;
+	width: 960px;
+	overflow: hidden;
+}
+
+#slider-wrapper {
+	width: 9999px;
+	position: relative;
+	transition: left 400ms linear;
+}
+
+.slide {
+	float: left;
+	width: 960px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.slide img {
+	position: absolute;
+}
+
+.caption {
+	margin: 0;
+	position: absolute;
+	z-index: 100;
+	bottom: -2em;
+	left: 0;
+	width: 100%;
+	height: 2em;
+	line-height: 2;
+	text-align: center;
+	background: rgba( 0, 0, 0, 0.6 );
+	color: #fff;
+	transition: bottom 500ms ease-in;
+}
+.caption.visible {
+	bottom: 0;
+}
+
+#slider-nav {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#slider-nav a {
+	width: 2em;
+	height: 2em;
+	border: 1px solid #ccc;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	line-height: 2;
+	margin-right: 0.5em;
+}
+
+#slider-nav a.current {
+	border-color: #000;
+}
+
+.techologiesSection #slider {
+	position: absolute;
+	max-width: 80%;
+	margin-left: 5%;
+	background: #fff;
+}
+
+.trueFalseSlide {
+	display: flex;
+}
+
+.trueFalseSlide i {
+	margin-right: 20px;
+	font-size: 30px;
+	color: #1234B9;
+}
+
+.captione {
+	max-width: 300px;
+}
+
+.falseSlideItem i{
+	color: #D24E1D;
+}
+
+.slider-wrapper {
+	background: #fff;
+}
+
+.slide {
+	padding: 20px;
+}
+
+.techologiesAll {
+	background: #F7F8FA;
+	min-height: 440px;
+}
+
+.imageSliderMain {
+	position: absolute;
+	width: 300px;
+}
+
+.ourService {
+	background: #111A51;
+	min-height: 300px;
 }
