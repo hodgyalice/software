@@ -15,6 +15,10 @@ body {
 	.ourServiceSection {
 		margin-left: 30px;
 	}
+
+	.wrapperFormRight {
+		display: flex;
+	}
 }
 
 @media (max-width: 768px) {
@@ -50,6 +54,7 @@ body {
 		margin-left: 5%;
 	}
 
+
 	
 }
 
@@ -64,6 +69,15 @@ body {
 
 	.techologies {
 	min-height: 700px;
+	}
+
+	.wrapperFormContent {
+		display: flex;
+	}
+	
+	.wrapperBtnForm {
+	display: flex;
+	justify-content: flex-end;
 	}
 }
 
@@ -135,7 +149,7 @@ body {
 	}
 
 	.reviewsSection {
-	min-height: 900px;
+	min-height: 650px;
 	}
 }
 
@@ -490,7 +504,7 @@ body {
 .reviewsSection {
 	background-image: url('../image/bg2.jpg');
 	position: relative;
-	bottom: 300px;
+	bottom: 200px;
 	z-index: -1;
 	padding-top: 300px;
 }
@@ -499,8 +513,6 @@ body {
 	width: 160px;
 	height: 150px;
 	background: #092ACD;
-	position: relative;
-	bottom: 20%;
 	left: 13%;
 	text-align: center;
 	opacity: 0.8;
@@ -529,6 +541,199 @@ body {
 }
 
 .wrapperslides .fas {
-	font-size: 40px;
+	font-size: 30px;
 	color: #FC582D;
+}
+
+.wrapperslides {
+	display: flex;
+}
+
+.wrapperSlideTxt {
+	margin-left: 20px;
+}
+
+.reviewsSlider {
+	margin-top: 10%;
+}
+.wrapperNextPrevSlide {
+	margin-top: 10%;
+	margin-left: 7%;
+}
+
+.wrapperNextPrevSlide i {
+	color: #111A51;
+	font-size: 40px;
+	margin-right: 12px;
+}
+
+.wrapperButtonReviews .btn-warning {
+	background: #FC582D;
+	border-radius: 20px;
+	width: 150px;
+}
+
+.wrapperButtonReviews {
+	margin-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.inputNameForm {
+	width: 70%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border: 1px solid grey;
+	text-align: center;
+	outline: none;
+}
+
+.wrapperPlaceName {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapperPlaceName h3{
+	margin-bottom: 60px;
+}
+
+.sectionForm {
+    background: url('../image/1212.jpg');
+    background-size: cover;
+
+}
+
+.form i{
+	color: #FC582D;
+	font-size: 45px;
+}
+
+.form .inputForm {
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	padding-bottom: 7px;
+	margin-top: 20px;
+	outline: none;
+	text-overflow: ellipsis;
+}
+
+.form label {
+	margin-left: 7px;
+	color: #636363;
+	margin-top: 20px;
+	max-width: 500px;
+}
+
+
+
+.form {
+	margin-top: 20px;
+}
+
+.wrapperGuy {
+	width: 240px;
+	padding-bottom: 10px;
+	background: #FF5A2C;
+	color: #fff;
+	height: 400px;
+}
+
+.wrapperGuy img {
+	width: 240px;
+}
+
+.wrapperFormLeft {
+	padding-right: 40px;
+}
+
+.wrapperFormLeft h3{
+	max-width: 500px;
+}
+
+.wrapperBtnForm .btn-warning {
+	background: #FF5A2C;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+.wrapperBtnForm .btn-warning:hover {
+	background: #FF5A2C;
+}
+
+.wrapperFormContent {
+	margin-top: 50px;
+}
+
+.wrapperContentGuy {
+	padding: 15px;
+}
+
+.wrapperCircleGuys {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #fff;
+	text-align: center;
+}
+
+.wrapperCircleGuys a .fa-envelope-open {
+	color: #FF5A2C;
+	font-size: 20px;
+	margin-top: 7px;
+	font-weight: 700;
+}
+
+.wrapperGuySecond {
+	background: #092ACF;
+	margin-top: 40px;
+}
+
+.navFooter {
+	margin-top: 80px;
+}
+
+.navFooter a{
+	color: #000;
+	margin-left: 20px;
+	font-weight: 700;
+}
+
+.navFooter a:hover{
+	color: #000;
+
+}
+
+.footerSection {
+	background: #EDF1F4;
+	padding-bottom: 40px;
+}
+
+.footerItemsText {
+	margin-top: 20px;
+}
+
+.footerItemsText a{
+	color: #737373;
+	margin-left: 30px;
+}
+
+.footerItemsText a:hover {
+	color: #737373;
+}
+
+.logoFooter {
+	max-width: 150px;
+	margin-top: 80px;
+	margin-right: 40px;
+}
+
+.wrapperFooterLogo {
+	display: flex;
+	justify-content: flex-end;
+	text-align: center;
 }
